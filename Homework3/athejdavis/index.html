@@ -1,0 +1,38 @@
+<!doctype html>
+<html style="width:100%;height:100%;">
+<head>
+  <meta charset="utf-8">
+  <title>Global Terrorism Dashboard</title>
+</head>
+<body>
+
+  <h1>Global Terrorism Dashboard</h1>
+  <p>This dashboard visualizes terrorism data over time using three coordinated views.</p>
+
+  <h2>Line Chart</h2>
+  <p>
+    This chart is an overview of the number of terrorist attacks per year. 
+    Use your mouse to click and drag over the chart to brush a time range.
+    The Bar Chart view below updates based on the brushed selection.
+  </p>
+  <div id="overview"></div>
+
+  <h2>Stacked Bar Chart</h2>
+  <p>
+    This chart shows attacks per region per year. You can 
+    zoom and pan to explore specific periods.
+    When brushing from the overview, bars will animate in and out.
+  </p>
+  <div id="focus"></div>
+
+  <h2>Advanced View - Streamgraph</h2>
+  <p>
+    This streamgraph displays the flow of different attack types over time.
+    Each color band represents an attack type. Use the legend to identify each stream.
+  </p>
+  <div id="advanced"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
